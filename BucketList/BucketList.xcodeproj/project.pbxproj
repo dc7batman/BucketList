@@ -11,6 +11,8 @@
 		015663111D68BED900366A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015663101D68BED900366A97 /* Assets.xcassets */; };
 		0156631F1D68BED900366A97 /* BucketListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156631E1D68BED900366A97 /* BucketListTests.swift */; };
 		0156632A1D68BED900366A97 /* BucketListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015663291D68BED900366A97 /* BucketListUITests.swift */; };
+		015663391D68C18100366A97 /* BLMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015663371D68C18100366A97 /* BLMainViewController.swift */; };
+		0156633A1D68C18100366A97 /* BLMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015663381D68C18100366A97 /* BLMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		015663251D68BED900366A97 /* BucketListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BucketListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		015663291D68BED900366A97 /* BucketListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITests.swift; sourceTree = "<group>"; };
 		0156632B1D68BED900366A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		015663371D68C18100366A97 /* BLMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLMainViewController.swift; sourceTree = "<group>"; };
+		015663381D68C18100366A97 /* BLMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				015663091D68BED900366A97 /* AppDelegate.swift */,
+				015663371D68C18100366A97 /* BLMainViewController.swift */,
+				015663381D68C18100366A97 /* BLMainViewController.xib */,
 				015663101D68BED900366A97 /* Assets.xcassets */,
 				015663151D68BED900366A97 /* Info.plist */,
 			);
@@ -224,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				015663111D68BED900366A97 /* Assets.xcassets in Resources */,
+				0156633A1D68C18100366A97 /* BLMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0156630A1D68BED900366A97 /* AppDelegate.swift in Sources */,
+				015663391D68C18100366A97 /* BLMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
