@@ -17,11 +17,10 @@ class BLMainViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpNavigationBar()
         
         if UserDefaults.standard.bool(forKey: kBLUserDefaults_SetupPassCode) {
-            // passcode already set up
-        } else {
-            // Show passcode screen
+            // Enter passcode
             showPasscodeView()
         }
     }
@@ -33,8 +32,23 @@ class BLMainViewController: UIViewController {
     
     func showPasscodeView() -> Void {
         let passcodeViewController = BLPasscodeViewController()
-        passcodeViewController.title = "Set Passcode"
+        passcodeViewController.title = "Enter Passcode"
         let passcodeNavController:UINavigationController = UINavigationController.init(rootViewController: passcodeViewController)
         self.present(passcodeNavController, animated: false, completion: nil)
+    }
+    
+    func setUpNavigationBar() -> Void {
+        let navBar = self.navigationController?.navigationBar
+        navBar?.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navBar?.shadowImage = UIImage()
+        navBar?.backgroundColor = UIColor.clear
+        navBar?.barStyle = UIBarStyle.black
+        navBar?.tintColor = UIColor.white
+    }
+    
+    @IBAction func getStarted(_ sender: AnyObject) {
+        let passcodeViewController = BLPasscodeViewController()
+        passcodeViewController.title = "Set Passcode"
+        self.navigationController?.pushViewController(passcodeViewController, animated: true)
     }
 }
