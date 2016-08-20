@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.init(frame: UIScreen.main.bounds)
         
         let mainViewController = BLMainViewController()
-        window?.rootViewController = mainViewController
-        
+        let navigationController:UINavigationController = UINavigationController.init(rootViewController: mainViewController)
+        window?.rootViewController = navigationController
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
         

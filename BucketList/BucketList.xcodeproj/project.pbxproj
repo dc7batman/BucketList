@@ -13,6 +13,8 @@
 		0156632A1D68BED900366A97 /* BucketListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015663291D68BED900366A97 /* BucketListUITests.swift */; };
 		015663391D68C18100366A97 /* BLMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015663371D68C18100366A97 /* BLMainViewController.swift */; };
 		0156633A1D68C18100366A97 /* BLMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015663381D68C18100366A97 /* BLMainViewController.xib */; };
+		0156633D1D68C2EB00366A97 /* BLPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156633B1D68C2EB00366A97 /* BLPasscodeViewController.swift */; };
+		0156633E1D68C2EB00366A97 /* BLPasscodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0156633C1D68C2EB00366A97 /* BLPasscodeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		0156632B1D68BED900366A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015663371D68C18100366A97 /* BLMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLMainViewController.swift; sourceTree = "<group>"; };
 		015663381D68C18100366A97 /* BLMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLMainViewController.xib; sourceTree = "<group>"; };
+		0156633B1D68C2EB00366A97 /* BLPasscodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLPasscodeViewController.swift; sourceTree = "<group>"; };
+		0156633C1D68C2EB00366A97 /* BLPasscodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLPasscodeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				015663091D68BED900366A97 /* AppDelegate.swift */,
-				015663371D68C18100366A97 /* BLMainViewController.swift */,
-				015663381D68C18100366A97 /* BLMainViewController.xib */,
+				015663411D68C33700366A97 /* Utilities */,
+				0156633F1D68C2F700366A97 /* Controllers */,
+				015663401D68C31800366A97 /* Model */,
 				015663101D68BED900366A97 /* Assets.xcassets */,
 				015663151D68BED900366A97 /* Info.plist */,
 			);
@@ -120,6 +125,31 @@
 				0156632B1D68BED900366A97 /* Info.plist */,
 			);
 			path = BucketListUITests;
+			sourceTree = "<group>";
+		};
+		0156633F1D68C2F700366A97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				015663371D68C18100366A97 /* BLMainViewController.swift */,
+				015663381D68C18100366A97 /* BLMainViewController.xib */,
+				0156633B1D68C2EB00366A97 /* BLPasscodeViewController.swift */,
+				0156633C1D68C2EB00366A97 /* BLPasscodeViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		015663401D68C31800366A97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		015663411D68C33700366A97 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0156633E1D68C2EB00366A97 /* BLPasscodeViewController.xib in Resources */,
 				015663111D68BED900366A97 /* Assets.xcassets in Resources */,
 				0156633A1D68C18100366A97 /* BLMainViewController.xib in Resources */,
 			);
@@ -255,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0156633D1D68C2EB00366A97 /* BLPasscodeViewController.swift in Sources */,
 				0156630A1D68BED900366A97 /* AppDelegate.swift in Sources */,
 				015663391D68C18100366A97 /* BLMainViewController.swift in Sources */,
 			);
