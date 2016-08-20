@@ -28,5 +28,7 @@ class BLPasscodeViewController: UIViewController {
         navBar?.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navBar?.shadowImage = UIImage()
         navBar?.backgroundColor = UIColor.clear
+        navBar?.barStyle = UIBarStyle.black
+        navBar?.tintColor = UIColor.white
     }
 }

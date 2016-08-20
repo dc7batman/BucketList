@@ -33,7 +33,7 @@ class BLMainViewController: UIViewController {
     
     func showPasscodeView() -> Void {
         let passcodeViewController = BLPasscodeViewController()
-        passcodeViewController.title = "Setup Passcode"
+        passcodeViewController.title = "Set Passcode"
         let passcodeNavController:UINavigationController = UINavigationController.init(rootViewController: passcodeViewController)
         self.present(passcodeNavController, animated: false, completion: nil)
     }
