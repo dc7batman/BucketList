@@ -15,6 +15,7 @@
 		0156633A1D68C18100366A97 /* BLMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015663381D68C18100366A97 /* BLMainViewController.xib */; };
 		0156633D1D68C2EB00366A97 /* BLPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156633B1D68C2EB00366A97 /* BLPasscodeViewController.swift */; };
 		0156633E1D68C2EB00366A97 /* BLPasscodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0156633C1D68C2EB00366A97 /* BLPasscodeViewController.xib */; };
+		0157294E1D7F277B0080E597 /* BLPasscodePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157294D1D7F277B0080E597 /* BLPasscodePinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		015663381D68C18100366A97 /* BLMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLMainViewController.xib; sourceTree = "<group>"; };
 		0156633B1D68C2EB00366A97 /* BLPasscodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLPasscodeViewController.swift; sourceTree = "<group>"; };
 		0156633C1D68C2EB00366A97 /* BLPasscodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLPasscodeViewController.xib; sourceTree = "<group>"; };
+		0157294D1D7F277B0080E597 /* BLPasscodePinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLPasscodePinView.swift; path = BucketList/BLPasscodePinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		015662FD1D68BED900366A97 = {
 			isa = PBXGroup;
 			children = (
+				015729481D7F26A10080E597 /* Views */,
 				015663081D68BED900366A97 /* BucketList */,
 				0156631D1D68BED900366A97 /* BucketListTests */,
 				015663281D68BED900366A97 /* BucketListUITests */,
@@ -150,6 +153,14 @@
 			children = (
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		015729481D7F26A10080E597 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0157294D1D7F277B0080E597 /* BLPasscodePinView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0157294E1D7F277B0080E597 /* BLPasscodePinView.swift in Sources */,
 				0156633D1D68C2EB00366A97 /* BLPasscodeViewController.swift in Sources */,
 				0156630A1D68BED900366A97 /* AppDelegate.swift in Sources */,
 				015663391D68C18100366A97 /* BLMainViewController.swift in Sources */,
@@ -512,6 +524,7 @@
 				015663301D68BED900366A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		015663311D68BED900366A97 /* Build configuration list for PBXNativeTarget "BucketListTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +533,7 @@
 				015663331D68BED900366A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		015663341D68BED900366A97 /* Build configuration list for PBXNativeTarget "BucketListUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +542,7 @@
 				015663361D68BED900366A97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
